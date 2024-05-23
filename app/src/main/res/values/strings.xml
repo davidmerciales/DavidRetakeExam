@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">DavidRetakeExam</string>
+    <string name="about_me">About Me</string>
+    <string name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies pretium justo id feugiat. In hac habitasse platea dictumst. Donec quis velit nisi. Mauris ultrices vel sapien et bibendum. Suspendisse quis erat velit. Nulla semper ac ante eget efficitur. Nulla rutrum mauris vitae ex pellentesque blandit.\nDonec non porttitor felis, id ultrices tortor. Duis efficitur nisl diam, eu interdum purus pellentesque sit amet. Donec mollis augue rhoncus, feugiat nisi non, tincidunt enim. Proin aliquet commodo dolor at condimentum. Nunc nec ipsum eros. In vitae ex elit. Suspendisse dapibus risus pellentesque, elementum justo ac, accumsan diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</string>
+    <string name="profile">profile</string>
+    <string name="gender">gender</string>
+    <string name="full_name">Full Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="age">Age</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
 </resources>

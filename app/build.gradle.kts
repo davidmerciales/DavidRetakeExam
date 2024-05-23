@@ -2,6 +2,9 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.com.google.dagger.hilt.android)
+    alias(libs.plugins.org.jetbrains.kotlin.serialization)
+    id("kotlin-kapt")
 }
 
 android {
@@ -33,6 +36,12 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+        version = "1.8.0"
+    }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
     }
 }
 
@@ -43,15 +52,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.constraintlayout)
     implementation(libs.rxandroid)
-    implementation(libs.reactivex)
     implementation(libs.room.ktx)
     implementation(libs.room.runtime)
-    implementation(libs.room.compiler)
     implementation(libs.room.paging)
-    implementation(libs.dagger.android)
-    implementation(libs.dagger.android.support)
-    implementation(libs.dagger.compiler)
-    implementation(libs.dagger.android.processor)
     implementation(libs.serialization.json)
     implementation(libs.ktor.client.sse)
     implementation(libs.ktor.client.core)
@@ -60,7 +63,21 @@ dependencies {
     implementation(libs.ktor.client.serialization.kotlinx.json)
     implementation(libs.ktor.client.logging)
     implementation(libs.ktor.client.auth)
+    implementation(libs.rxjava3)
+    implementation(libs.okhttp3)
+    implementation(libs.gson)
+    implementation(libs.kotlinx.coroutine)
+    implementation(libs.lifecycle.runtime.ktx)
+    implementation(libs.hilt.android)
+    implementation(libs.multidex)
+    implementation(libs.androidx.fragment)
+    implementation(libs.androidx.ui.android)
+    implementation(libs.androidx.swiperefreshlayout)
+    implementation(libs.glide)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    kapt(libs.hilt.android.compiler)
+    kapt(libs.room.compiler)
 }
